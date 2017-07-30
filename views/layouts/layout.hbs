@@ -2,15 +2,15 @@
 <html lang="{{config.settings.locale}}">
   <head>
     {{#if result.kb_seo_title}}
-      <title>{{result.kb_seo_title}}</title>
-      <meta property="og:title" content="{{result.kb_seo_title}}" />
+      <title>{{result.kb_seo_title}} | {{config.settings.website_title}}</title>
+      <meta property="og:title" content="{{result.kb_seo_title}} | {{config.settings.website_title}}" />
     {{else}}
       {{#if result.kb_title}}
-        <title>{{result.kb_title}}</title>
-        <meta property="og:title" content="{{result.kb_title}}" />
+        <title>{{result.kb_title}} | {{config.settings.website_title}}</title>
+        <meta property="og:title" content="{{result.kb_title}} | {{config.settings.website_title}}" />
       {{else}}
-        <title>{{title}}</title>
-        <meta property="og:title" content="{{title}}" />
+        <title>{{config.settings.website_title}}</title>
+        <meta property="og:title" content="{{config.settings.website_title}}" />
       {{/if}}
     {{/if}}
     <meta charset="utf-8">
